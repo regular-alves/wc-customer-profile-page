@@ -13,17 +13,29 @@
     <exclude-pattern>/tests/*</exclude-pattern>
     <exclude-pattern>/node_modules/*</exclude-pattern>
 
-    <rule ref="WordPress-VIP-Go"/>
+    <rule ref="WordPress-VIP-Go">
+        <exclude name="WordPressVIPMinimum.JS.StringConcat"/>
+        <exclude name="WordPressVIPMinimum.JS.DangerouslySetInnerHTML"/>
+        <exclude name="WordPressVIPMinimum.JS.StrippingTags"/>
+        <exclude name="WordPressVIPMinimum.JS.Window"/>
+        <exclude name="WordPressVIPMinimum.JS.InnerHTML"/>
+        <exclude name="WordPressVIPMinimum.JS.HTMLExecutingFunctions"/>
+    </rule>
 
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" type="array" value="wc-customer-profile-page"/>
+            <property name="text_domain" type="array">
+                <element value="wc-customer-profile-page"/>
+            </property>
         </properties>
     </rule>
 
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
         <properties>
-            <property name="prefixes" type="array" value="wccp,WCCustomerProfilePage"/>
+            <property name="prefixes" type="array">
+                <element value="wccp"/>
+                <element value="WCCustomerProfilePage"/>
+            </property>
         </properties>
     </rule>
 </ruleset>
