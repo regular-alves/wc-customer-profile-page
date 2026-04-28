@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="WooCommerce Customer Profile Page">
-    <description>Coding standards for the WooCommerce Customer Profile Page plugin.</description>
+<ruleset name="WC Customer Profile Page">
+    <description>Coding standards for the WC Customer Profile Page plugin.</description>
 
     <file>.</file>
 

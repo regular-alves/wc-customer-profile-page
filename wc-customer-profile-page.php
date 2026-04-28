@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       WooCommerce Customer Profile Page
- * Plugin URI:        https://github.com/regular-alves/woocommerce-customer-profile-page
+ * Plugin Name:       WC Customer Profile Page
+ * Plugin URI:        https://github.com/regular-alves/wc-customer-profile-page
  * Description:       Adds an enhanced customer profile page to WooCommerce My Account.
  * Version:           1.0.0
  * Requires at least: 6.4

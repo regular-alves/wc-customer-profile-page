@@ -1,1 +1,1 @@
-# woocommerce-customer-profile-page
+# WC Customer Profile Page
