@@ -5,7 +5,7 @@
  * Description:       Adds an enhanced customer profile page to WooCommerce My Account.
  * Version:           1.0.0
  * Requires at least: 6.4
- * Requires PHP:      8.1
+ * Requires PHP:      8.0
  * Author:            Rodrigo Alves
  * Author URI:        https://github.com/regular-alves/
  * License:           GPL-2.0-or-later
@@ -13,7 +13,7 @@
  * Text Domain:       wc-customer-profile-page
  * Domain Path:       /languages
  *
- * WC requires at least: 8.0
+ * WC requires at least: 9.0
  * WC tested up to:      9.0
  *
  * @package WCCustomerProfilePage
