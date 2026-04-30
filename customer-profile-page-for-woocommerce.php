@@ -51,7 +51,7 @@ function missing_woocommerce_notice(): void {
 	?>
 	<div class="notice notice-error">
 		<p>
-			<?php esc_html_e( 'WC Customer Profile Page requires WooCommerce to be installed and active.', 'customer-profile-page-for-woocommerce' ); ?>
+			<?php esc_html_e( 'Customer Profile Page for WooCommerce requires WooCommerce to be installed and active.', 'customer-profile-page-for-woocommerce' ); ?>
 		</p>
 	</div>
 	<?php
