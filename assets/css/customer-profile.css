@@ -66,6 +66,10 @@
 				margin: 4px 0;
 			}
 
+			& .wccp-contact-data {
+				margin-right: 5px;
+			}
+
 			& .wccp-registered {
 				color: #646970;
 				font-size: 13px;

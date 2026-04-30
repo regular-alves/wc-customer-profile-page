@@ -101,9 +101,7 @@ $wccp_billing_address = implode(
 
 		<div class="wccp-contact">
 			<p class="wccp-email">
-				<a href="<?php echo esc_url( 'mailto:' . $wccp_email ); ?>">
-					<?php echo esc_html( $wccp_email ); ?>
-				</a>
+				<a href="<?php echo esc_url( 'mailto:' . $wccp_email ); ?>" class="wccp-contact-data"><?php echo esc_html( $wccp_email ); ?></a>
 				<button class="wccp-copy" data-copy="<?php echo esc_attr( $wccp_email ); ?>" type="button">
 					<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M16 1H4C2.9 1 2 1.9 2 3v14h2V3h12V1zm3 4H8C6.9 5 6 5.9 6 7v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
 					<span class="screen-reader-text"><?php esc_html_e( 'Copy email', 'customer-profile-page-for-woocommerce' ); ?></span>
@@ -112,10 +110,11 @@ $wccp_billing_address = implode(
 
 			<?php if ( $wccp_phone ) : ?>
 				<p class="wccp-phone">
-					<a href="<?php echo esc_url( 'tel:' . $wccp_phone ); ?>">
+					<a href="<?php echo esc_url( 'tel:' . $wccp_phone ); ?>" class="wccp-contact-data">
 						<?php echo esc_html( $wccp_phone ); ?>
 					</a>
-					<a href="<?php echo esc_url( 'https://wa.me/55' . preg_replace( '/\D/', '', $wccp_phone ) ); ?>"
+					<a 
+						href="<?php echo esc_url( 'https://wa.me/55' . preg_replace( '/\D/', '', $wccp_phone ) ); ?>"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="wccp-whatsapp"
