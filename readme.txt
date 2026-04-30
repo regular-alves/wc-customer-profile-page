@@ -1,0 +1,63 @@
+=== Customer Profile Page for WooCommerce ===
+Contributors: regularalves
+Tags: woocommerce, customer, profile, crm, orders
+Requires at least: 6.4
+Tested up to: 6.9
+Stable tag: 1.0.0
+Requires PHP: 8.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Adds a dedicated customer profile page to the WooCommerce admin, with KPIs, recent orders, and contact details at a glance.
+
+== Description ==
+
+**Customer Profile Page for WooCommerce** replaces the generic WordPress user-edit screen with a purpose-built profile page designed for store managers.
+
+When you click on a customer name anywhere inside WooCommerce — orders list, reports, or the admin panel — you land on a clean profile page that shows everything you need without digging through multiple screens.
+
+**What you get on each profile:**
+
+* **Contact card** — name, email (with one-click copy), phone (with one-click copy and direct WhatsApp link), and billing address.
+* **Location map** — an embedded map built from the customer's billing address so you can instantly see where they are.
+* **Key metrics** — total spent, average order value, total order count, date of first order, and average interval between orders.
+* **Recent orders table** — the last orders with status badges and direct links to each order.
+* **Quick actions** — a direct link to the standard WordPress user-edit page whenever you need to change account details.
+
+The plugin intercepts all WooCommerce entry points that normally link to `user-edit.php` and silently redirects them to the new profile page, so your team never has to remember a separate URL.
+
+== Installation ==
+
+1. Upload the `customer-profile-page-for-woocommerce` folder to the `/wp-content/plugins/` directory, or install it directly from the WordPress plugin directory.
+2. Activate the plugin through the **Plugins** menu in WordPress.
+3. Make sure WooCommerce is installed and active.
+4. Open any order in WooCommerce and click the customer name — you will be taken to the new profile page.
+
+== Frequently Asked Questions ==
+
+= Does this replace the default user-edit page? =
+
+No. The plugin adds a new admin page and redirects WooCommerce-specific links to it. The standard WordPress user management screens remain untouched.
+
+= What capability is required to view the profile page? =
+
+The page requires the `manage_woocommerce` capability, the same one used to access the WooCommerce admin area.
+
+= Is it compatible with WooCommerce HPOS (High-Performance Order Storage)? =
+
+Yes. The plugin explicitly declares compatibility with WooCommerce's Custom Order Tables (HPOS).
+
+== Screenshots ==
+
+1. Customer profile page showing contact details, location map, and key metrics.
+2. Recent orders table with status badges and direct order links.
+
+== Changelog ==
+
+= 1.0.0 =
+* Initial release.
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+Initial release.
