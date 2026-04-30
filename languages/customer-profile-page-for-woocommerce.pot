@@ -1,0 +1,165 @@
+# Copyright (C) 2026 Gois.dev
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Customer Profile Page for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/customer-profile-page-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-30T00:43:25+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: customer-profile-page-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: customer-profile-page-for-woocommerce.php:3
+msgid "Customer Profile Page for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: customer-profile-page-for-woocommerce.php:4
+msgid "https://github.com/regular-alves/customer-profile-page-for-woocommerce"
+msgstr ""
+
+#. Description of the plugin
+#: customer-profile-page-for-woocommerce.php:5
+msgid "Adds an enhanced customer profile page to WooCommerce My Account."
+msgstr ""
+
+#. Author of the plugin
+#: customer-profile-page-for-woocommerce.php:9
+msgid "Gois.dev"
+msgstr ""
+
+#. Author URI of the plugin
+#: customer-profile-page-for-woocommerce.php:10
+msgid "https://gois.dev/"
+msgstr ""
+
+#: customer-profile-page-for-woocommerce.php:54
+msgid "Customer Profile Page for WooCommerce requires WooCommerce to be installed and active."
+msgstr ""
+
+#: includes/Profile/ProfilePage.php:26
+#: includes/Profile/ProfilePage.php:27
+msgid "Customer Profile"
+msgstr ""
+
+#: includes/Profile/ProfilePage.php:81
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: includes/Profile/ProfilePage.php:112
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: includes/Profile/ProfilePage.php:118
+msgid "Invalid customer ID."
+msgstr ""
+
+#: includes/Profile/ProfilePage.php:125
+msgid "Customer not found."
+msgstr ""
+
+#: templates/admin/customer-profile.php:58
+msgid "(no name)"
+msgstr ""
+
+#: templates/admin/customer-profile.php:63
+msgid "Edit customer"
+msgstr ""
+
+#: templates/admin/customer-profile.php:71
+msgid "Send password reset"
+msgstr ""
+
+#: templates/admin/customer-profile.php:81
+msgid "Password reset email sent successfully."
+msgstr ""
+
+#: templates/admin/customer-profile.php:85
+msgid "Failed to send password reset email. Please try again."
+msgstr ""
+
+#: templates/admin/customer-profile.php:109
+msgid "Copy email"
+msgstr ""
+
+#: templates/admin/customer-profile.php:124
+msgid "WhatsApp"
+msgstr ""
+
+#: templates/admin/customer-profile.php:128
+msgid "Copy phone"
+msgstr ""
+
+#: templates/admin/customer-profile.php:133
+msgid "—"
+msgstr ""
+
+#. translators: %s: registration date
+#: templates/admin/customer-profile.php:146
+#, php-format
+msgid "Customer since %s"
+msgstr ""
+
+#: templates/admin/customer-profile.php:161
+msgid "Customer location"
+msgstr ""
+
+#: templates/admin/customer-profile.php:170
+msgid "Total spent"
+msgstr ""
+
+#: templates/admin/customer-profile.php:174
+msgid "Average order"
+msgstr ""
+
+#: templates/admin/customer-profile.php:178
+msgid "Orders"
+msgstr ""
+
+#: templates/admin/customer-profile.php:182
+msgid "First order"
+msgstr ""
+
+#: templates/admin/customer-profile.php:194
+msgid "Avg. interval"
+msgstr ""
+
+#. translators: %d: number of days
+#: templates/admin/customer-profile.php:200
+#, php-format
+msgid "every %d days"
+msgstr ""
+
+#: templates/admin/customer-profile.php:213
+msgid "Recent orders"
+msgstr ""
+
+#: templates/admin/customer-profile.php:220
+msgid "Order"
+msgstr ""
+
+#: templates/admin/customer-profile.php:221
+msgid "Date"
+msgstr ""
+
+#: templates/admin/customer-profile.php:222
+msgid "Status"
+msgstr ""
+
+#: templates/admin/customer-profile.php:223
+msgid "Total"
+msgstr ""
+
+#: templates/admin/customer-profile.php:248
+msgid "No orders found."
+msgstr ""
+
+#: templates/admin/customer-profile.php:253
+msgid "View all orders"
+msgstr ""

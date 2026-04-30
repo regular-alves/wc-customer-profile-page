@@ -27,7 +27,8 @@
     "scripts": {
         "phpcs": "phpcs",
         "phpcbf": "phpcbf",
-        "test": "phpunit"
+        "test": "phpunit",
+        "make-pot": "wp i18n make-pot . languages/customer-profile-page-for-woocommerce.pot --domain=customer-profile-page-for-woocommerce --exclude=vendor,tests"
     },
     "config": {
         "allow-plugins": {
