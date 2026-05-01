@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-04-30T00:43:25+00:00\n"
+"POT-Creation-Date: 2026-05-01T00:28:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: customer-profile-page-for-woocommerce\n"
@@ -39,8 +39,98 @@ msgstr ""
 msgid "https://gois.dev/"
 msgstr ""
 
-#: customer-profile-page-for-woocommerce.php:54
+#: customer-profile-page-for-woocommerce.php:57
 msgid "Customer Profile Page for WooCommerce requires WooCommerce to be installed and active."
+msgstr ""
+
+#: includes/Core/Assets.php:55
+msgid "Edit"
+msgstr ""
+
+#: includes/Core/Assets.php:56
+msgid "Delete"
+msgstr ""
+
+#: includes/Core/Assets.php:57
+msgid "Save"
+msgstr ""
+
+#: includes/Core/Assets.php:58
+msgid "Cancel"
+msgstr ""
+
+#: includes/Core/Assets.php:59
+#: templates/admin/customer-profile.php:265
+msgid "Bold"
+msgstr ""
+
+#: includes/Core/Assets.php:60
+#: templates/admin/customer-profile.php:266
+msgid "Italic"
+msgstr ""
+
+#: includes/Core/Assets.php:61
+#: templates/admin/customer-profile.php:267
+msgid "Underline"
+msgstr ""
+
+#: includes/Core/Assets.php:62
+msgid "Are you sure you want to delete this note?"
+msgstr ""
+
+#: includes/Core/Assets.php:63
+msgid "No notes yet."
+msgstr ""
+
+#: includes/Core/Assets.php:64
+msgid "Enter URL:"
+msgstr ""
+
+#: includes/Core/Assets.php:65
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/Core/Assets.php:66
+msgid "Loading…"
+msgstr ""
+
+#: includes/Core/Assets.php:67
+#: templates/admin/customer-profile.php:294
+msgid "All authors"
+msgstr ""
+
+#: includes/Core/Assets.php:68
+msgid "Page"
+msgstr ""
+
+#: includes/Core/Assets.php:69
+msgid "of"
+msgstr ""
+
+#: includes/Notes/Ajax.php:45
+#: includes/Notes/Ajax.php:83
+#: includes/Notes/Ajax.php:116
+#: includes/Notes/Ajax.php:138
+msgid "Permission denied."
+msgstr ""
+
+#: includes/Notes/Ajax.php:55
+#: includes/Notes/Ajax.php:90
+#: includes/Notes/Ajax.php:124
+#: includes/Notes/Ajax.php:145
+msgid "Invalid data."
+msgstr ""
+
+#: includes/Notes/Ajax.php:97
+msgid "Could not save note."
+msgstr ""
+
+#: includes/Notes/Ajax.php:128
+msgid "Could not update note."
+msgstr ""
+
+#: includes/Notes/Ajax.php:149
+msgid "Could not delete note."
 msgstr ""
 
 #: includes/Profile/ProfilePage.php:26
@@ -64,102 +154,142 @@ msgstr ""
 msgid "Customer not found."
 msgstr ""
 
-#: templates/admin/customer-profile.php:58
+#: templates/admin/customer-profile.php:57
 msgid "(no name)"
 msgstr ""
 
-#: templates/admin/customer-profile.php:63
+#: templates/admin/customer-profile.php:62
 msgid "Edit customer"
 msgstr ""
 
-#: templates/admin/customer-profile.php:71
+#: templates/admin/customer-profile.php:70
 msgid "Send password reset"
 msgstr ""
 
-#: templates/admin/customer-profile.php:81
+#: templates/admin/customer-profile.php:80
 msgid "Password reset email sent successfully."
 msgstr ""
 
-#: templates/admin/customer-profile.php:85
+#: templates/admin/customer-profile.php:84
 msgid "Failed to send password reset email. Please try again."
 msgstr ""
 
-#: templates/admin/customer-profile.php:109
+#: templates/admin/customer-profile.php:106
 msgid "Copy email"
 msgstr ""
 
-#: templates/admin/customer-profile.php:124
+#: templates/admin/customer-profile.php:122
 msgid "WhatsApp"
 msgstr ""
 
-#: templates/admin/customer-profile.php:128
+#: templates/admin/customer-profile.php:126
 msgid "Copy phone"
 msgstr ""
 
-#: templates/admin/customer-profile.php:133
+#: templates/admin/customer-profile.php:131
 msgid "—"
 msgstr ""
 
 #. translators: %s: registration date
-#: templates/admin/customer-profile.php:146
+#: templates/admin/customer-profile.php:144
 #, php-format
 msgid "Customer since %s"
 msgstr ""
 
-#: templates/admin/customer-profile.php:161
+#: templates/admin/customer-profile.php:159
 msgid "Customer location"
 msgstr ""
 
-#: templates/admin/customer-profile.php:170
+#: templates/admin/customer-profile.php:168
 msgid "Total spent"
 msgstr ""
 
-#: templates/admin/customer-profile.php:174
+#: templates/admin/customer-profile.php:172
 msgid "Average order"
 msgstr ""
 
-#: templates/admin/customer-profile.php:178
+#: templates/admin/customer-profile.php:176
 msgid "Orders"
 msgstr ""
 
-#: templates/admin/customer-profile.php:182
+#: templates/admin/customer-profile.php:180
 msgid "First order"
 msgstr ""
 
-#: templates/admin/customer-profile.php:194
+#: templates/admin/customer-profile.php:192
 msgid "Avg. interval"
 msgstr ""
 
 #. translators: %d: number of days
-#: templates/admin/customer-profile.php:200
+#: templates/admin/customer-profile.php:198
 #, php-format
 msgid "every %d days"
 msgstr ""
 
-#: templates/admin/customer-profile.php:213
+#: templates/admin/customer-profile.php:211
 msgid "Recent orders"
 msgstr ""
 
-#: templates/admin/customer-profile.php:220
+#: templates/admin/customer-profile.php:218
 msgid "Order"
 msgstr ""
 
-#: templates/admin/customer-profile.php:221
+#: templates/admin/customer-profile.php:219
 msgid "Date"
 msgstr ""
 
-#: templates/admin/customer-profile.php:222
+#: templates/admin/customer-profile.php:220
 msgid "Status"
 msgstr ""
 
-#: templates/admin/customer-profile.php:223
+#: templates/admin/customer-profile.php:221
 msgid "Total"
 msgstr ""
 
-#: templates/admin/customer-profile.php:248
+#: templates/admin/customer-profile.php:246
 msgid "No orders found."
 msgstr ""
 
-#: templates/admin/customer-profile.php:253
+#: templates/admin/customer-profile.php:251
 msgid "View all orders"
+msgstr ""
+
+#: templates/admin/customer-profile.php:259
+msgid "Notes"
+msgstr ""
+
+#: templates/admin/customer-profile.php:269
+msgid "Bullet list"
+msgstr ""
+
+#: templates/admin/customer-profile.php:270
+msgid "Numbered list"
+msgstr ""
+
+#: templates/admin/customer-profile.php:272
+msgid "Link"
+msgstr ""
+
+#: templates/admin/customer-profile.php:279
+msgid "Add a note…"
+msgstr ""
+
+#: templates/admin/customer-profile.php:281
+msgid "Add note"
+msgstr ""
+
+#: templates/admin/customer-profile.php:291
+msgid "Search notes…"
+msgstr ""
+
+#: templates/admin/customer-profile.php:302
+msgid "Notes pagination"
+msgstr ""
+
+#: templates/admin/customer-profile.php:304
+msgid "← Previous"
+msgstr ""
+
+#: templates/admin/customer-profile.php:306
+msgid "Next →"
 msgstr ""

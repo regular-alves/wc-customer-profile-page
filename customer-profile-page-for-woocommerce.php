@@ -21,6 +21,7 @@
 
 namespace WCCustomerProfilePage;
 
+use WCCustomerProfilePage\Core\Installer;
 use WCCustomerProfilePage\Core\Plugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -35,6 +36,8 @@ define( 'WCCP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 if ( file_exists( WCCP_PLUGIN_DIR . 'vendor/autoload.php' ) ) {
 	require_once WCCP_PLUGIN_DIR . 'vendor/autoload.php';
 }
+
+register_activation_hook( __FILE__, [ Installer::class, 'activate' ] );
 
 add_action( 'plugins_loaded', __NAMESPACE__ . '\\bootstrap' );
 

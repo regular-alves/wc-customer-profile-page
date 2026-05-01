@@ -22,7 +22,6 @@ $wccp_orders_url         = $args['orders_url'] ?? '';
 $wccp_user_id            = (int) ( $args['user_id'] ?? 0 );
 $wccp_first_order_date   = $args['first_order_date'] ?? null;
 $wccp_avg_order_interval = $args['avg_order_interval'] ?? null;
-
 if ( ! $wccp_customer instanceof \WC_Customer ) {
 	return;
 }
@@ -252,6 +251,62 @@ $wccp_billing_address = implode(
 					<?php esc_html_e( 'View all orders', 'customer-profile-page-for-woocommerce' ); ?>
 				</a>
 			</p>
+		</div>
+	</div>
+
+	<div class="postbox wccp-notes-box">
+		<div class="postbox-header">
+			<h2 class="hndle"><?php esc_html_e( 'Notes', 'customer-profile-page-for-woocommerce' ); ?></h2>
+		</div>
+		<div class="inside wccp-notes-layout">
+
+			<div class="wccp-notes-form-col">
+				<div class="wccp-rte-toolbar">
+					<button type="button" class="wccp-rte-btn" data-cmd="bold" title="<?php esc_attr_e( 'Bold', 'customer-profile-page-for-woocommerce' ); ?>"><span class="dashicons dashicons-editor-bold"></span></button>
+					<button type="button" class="wccp-rte-btn" data-cmd="italic" title="<?php esc_attr_e( 'Italic', 'customer-profile-page-for-woocommerce' ); ?>"><span class="dashicons dashicons-editor-italic"></span></button>
+					<button type="button" class="wccp-rte-btn wccp-rte-btn--text" data-cmd="underline" title="<?php esc_attr_e( 'Underline', 'customer-profile-page-for-woocommerce' ); ?>"><u>U</u></button>
+					<span class="wccp-rte-sep"></span>
+					<button type="button" class="wccp-rte-btn" data-cmd="insertUnorderedList" title="<?php esc_attr_e( 'Bullet list', 'customer-profile-page-for-woocommerce' ); ?>"><span class="dashicons dashicons-editor-ul"></span></button>
+					<button type="button" class="wccp-rte-btn" data-cmd="insertOrderedList" title="<?php esc_attr_e( 'Numbered list', 'customer-profile-page-for-woocommerce' ); ?>"><span class="dashicons dashicons-editor-ol"></span></button>
+					<span class="wccp-rte-sep"></span>
+					<button type="button" class="wccp-rte-btn" data-cmd="createLink" title="<?php esc_attr_e( 'Link', 'customer-profile-page-for-woocommerce' ); ?>"><span class="dashicons dashicons-admin-links"></span></button>
+				</div>
+				<form id="wccp-add-note-form" data-customer-id="<?php echo esc_attr( $wccp_user_id ); ?>">
+					<div
+						id="wccp-rte-editor"
+						class="wccp-rte-editor"
+						contenteditable="true"
+						data-placeholder="<?php esc_attr_e( 'Add a note…', 'customer-profile-page-for-woocommerce' ); ?>"
+					></div>
+					<button type="submit" class="button button-primary"><?php esc_html_e( 'Add note', 'customer-profile-page-for-woocommerce' ); ?></button>
+				</form>
+			</div>
+
+			<div class="wccp-notes-list-col">
+				<div class="wccp-notes-controls">
+					<input
+						type="search"
+						id="wccp-notes-search"
+						class="regular-text"
+						placeholder="<?php esc_attr_e( 'Search notes…', 'customer-profile-page-for-woocommerce' ); ?>"
+					/>
+					<select id="wccp-notes-author">
+						<option value=""><?php esc_html_e( 'All authors', 'customer-profile-page-for-woocommerce' ); ?></option>
+					</select>
+				</div>
+				<div id="wccp-notes-list"></div>
+				<nav
+					class="wccp-notes-pagination"
+					id="wccp-notes-pagination"
+					hidden
+					aria-label="<?php esc_attr_e( 'Notes pagination', 'customer-profile-page-for-woocommerce' ); ?>"
+				>
+					<button type="button" class="button wccp-page-prev"><?php esc_html_e( '← Previous', 'customer-profile-page-for-woocommerce' ); ?></button>
+					<span class="wccp-page-info"></span>
+					<button type="button" class="button wccp-page-next"><?php esc_html_e( 'Next →', 'customer-profile-page-for-woocommerce' ); ?></button>
+				</nav>
+			</div>
+
 		</div>
 	</div>
 

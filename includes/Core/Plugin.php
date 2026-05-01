@@ -7,6 +7,8 @@ namespace WCCustomerProfilePage\Core;
 
 defined( 'ABSPATH' ) || exit;
 
+use WCCustomerProfilePage\Notes\Ajax as NotesAjax;
+use WCCustomerProfilePage\Notes\Repository as NotesRepository;
 use WCCustomerProfilePage\Profile\EntryPoints;
 use WCCustomerProfilePage\Profile\ProfilePage;
 
@@ -25,11 +27,21 @@ final class Plugin {
 	}
 
 	public function init(): void {
+		$this->maybe_upgrade_db();
+
 		add_action( 'before_woocommerce_init', [ $this, 'declare_hpos_compatibility' ] );
 
 		( new EntryPoints() )->register();
 		( new ProfilePage() )->register();
 		( new Assets() )->register();
+		( new NotesAjax( new NotesRepository() ) )->register();
+	}
+
+	private function maybe_upgrade_db(): void {
+		if ( get_option( 'wccp_db_version' ) !== WCCP_VERSION ) {
+			Installer::activate();
+			update_option( 'wccp_db_version', WCCP_VERSION );
+		}
 	}
 
 	public function declare_hpos_compatibility(): void {

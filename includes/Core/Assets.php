@@ -14,6 +14,14 @@ class Assets {
 	public function register(): void {
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_entry_points' ] );
+		add_filter( 'script_loader_tag', [ $this, 'add_module_type' ], 10, 2 );
+	}
+
+	public function add_module_type( string $tag, string $handle ): string {
+		if ( 'wccp-customer-profile' === $handle ) {
+			return str_replace( ' src=', ' type="module" src=', $tag );
+		}
+		return $tag;
 	}
 
 	public function enqueue( string $hook ): void {
@@ -34,6 +42,33 @@ class Assets {
 			[],
 			WCCP_VERSION,
 			true
+		);
+
+		wp_localize_script(
+			'wccp-customer-profile',
+			'wccpNotes',
+			[
+				'ajaxUrl'       => admin_url( 'admin-ajax.php' ),
+				'nonce'         => wp_create_nonce( 'wccp_notes' ),
+				'currentUserId' => (string) get_current_user_id(),
+				'i18n'          => [
+					'edit'          => __( 'Edit', 'customer-profile-page-for-woocommerce' ),
+					'delete'        => __( 'Delete', 'customer-profile-page-for-woocommerce' ),
+					'save'          => __( 'Save', 'customer-profile-page-for-woocommerce' ),
+					'cancel'        => __( 'Cancel', 'customer-profile-page-for-woocommerce' ),
+					'bold'          => __( 'Bold', 'customer-profile-page-for-woocommerce' ),
+					'italic'        => __( 'Italic', 'customer-profile-page-for-woocommerce' ),
+					'underline'     => __( 'Underline', 'customer-profile-page-for-woocommerce' ),
+					'confirmDelete' => __( 'Are you sure you want to delete this note?', 'customer-profile-page-for-woocommerce' ),
+					'empty'         => __( 'No notes yet.', 'customer-profile-page-for-woocommerce' ),
+					'insertLink'    => __( 'Enter URL:', 'customer-profile-page-for-woocommerce' ),
+					'error'         => __( 'Something went wrong. Please try again.', 'customer-profile-page-for-woocommerce' ),
+					'loading'       => __( 'Loading…', 'customer-profile-page-for-woocommerce' ),
+					'allAuthors'    => __( 'All authors', 'customer-profile-page-for-woocommerce' ),
+					'page'          => __( 'Page', 'customer-profile-page-for-woocommerce' ),
+					'of'            => __( 'of', 'customer-profile-page-for-woocommerce' ),
+				],
+			]
 		);
 	}
 
