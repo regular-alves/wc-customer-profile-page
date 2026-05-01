@@ -10,7 +10,6 @@ defined( 'ABSPATH' ) || exit;
 class CustomerData {
 
 	private const CACHE_GROUP = 'wccp_customer';
-	private const CACHE_TTL   = 300;
 
 	public function get_customer( int $user_id ): ?\WC_Customer {
 		try {
@@ -43,7 +42,7 @@ class CustomerData {
 			'avg_order'   => $avg_order,
 		];
 
-		wp_cache_set( $cache_key, $kpis, self::CACHE_GROUP, self::CACHE_TTL );
+		wp_cache_set( $cache_key, $kpis, self::CACHE_GROUP, 300 );
 
 		return $kpis;
 	}
@@ -69,7 +68,7 @@ class CustomerData {
 			]
 		);
 
-		wp_cache_set( $cache_key, $orders, self::CACHE_GROUP, self::CACHE_TTL );
+		wp_cache_set( $cache_key, $orders, self::CACHE_GROUP, 300 );
 
 		return $orders;
 	}
@@ -103,7 +102,7 @@ class CustomerData {
 
 		$date = ! empty( $orders ) ? $orders[0]->get_date_created() : null;
 
-		wp_cache_set( $cache_key, $date ?? 0, self::CACHE_GROUP, self::CACHE_TTL );
+		wp_cache_set( $cache_key, $date ?? 0, self::CACHE_GROUP, 300 );
 
 		return $date;
 	}
@@ -127,7 +126,7 @@ class CustomerData {
 		);
 
 		if ( count( $orders ) < 2 ) {
-			wp_cache_set( $cache_key, -1, self::CACHE_GROUP, self::CACHE_TTL );
+			wp_cache_set( $cache_key, -1, self::CACHE_GROUP, 300 );
 			return null;
 		}
 
@@ -140,7 +139,7 @@ class CustomerData {
 		}
 
 		if ( count( $timestamps ) < 2 ) {
-			wp_cache_set( $cache_key, -1, self::CACHE_GROUP, self::CACHE_TTL );
+			wp_cache_set( $cache_key, -1, self::CACHE_GROUP, 300 );
 			return null;
 		}
 
@@ -151,7 +150,7 @@ class CustomerData {
 		}
 
 		$avg_days = (int) round( $total_seconds / $count / DAY_IN_SECONDS );
-		wp_cache_set( $cache_key, $avg_days, self::CACHE_GROUP, self::CACHE_TTL );
+		wp_cache_set( $cache_key, $avg_days, self::CACHE_GROUP, 300 );
 
 		return $avg_days;
 	}
