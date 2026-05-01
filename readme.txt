@@ -8,7 +8,7 @@ Requires PHP: 8.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Adds a dedicated customer profile page to the WooCommerce admin, with KPIs, recent orders, and contact details at a glance.
+Adds a dedicated customer profile page to the WooCommerce admin, with KPIs, recent orders, contact details, and internal notes at a glance.
 
 == Description ==
 
@@ -22,6 +22,7 @@ When you click on a customer name anywhere inside WooCommerce — orders list, r
 * **Location map** — an embedded map built from the customer's billing address so you can instantly see where they are.
 * **Key metrics** — total spent, average order value, total order count, date of first order, and average interval between orders.
 * **Recent orders table** — the last orders with status badges and direct links to each order.
+* **Internal notes** — add private notes to any customer profile. Notes support rich-text formatting (bold, italic, underline, bullet and numbered lists, and links), can be searched by keyword, filtered by author, and are paginated. Each team member can edit or delete only their own notes.
 * **Quick actions** — a direct link to the standard WordPress user-edit page whenever you need to change account details.
 
 The plugin intercepts all WooCommerce entry points that normally link to `user-edit.php` and silently redirects them to the new profile page, so your team never has to remember a separate URL.
@@ -47,17 +48,29 @@ The page requires the `manage_woocommerce` capability, the same one used to acce
 
 Yes. The plugin explicitly declares compatibility with WooCommerce's Custom Order Tables (HPOS).
 
+= Who can see the internal notes? =
+
+Notes are visible to any user with the `manage_woocommerce` capability. Only the author of a note can edit or delete it.
+
+= Are notes private to each store? =
+
+Yes. Notes are stored in the site's own database and are never shared or synced externally.
+
 == Screenshots ==
 
 1. Customer profile page showing contact details, location map, and key metrics.
 2. Recent orders table with status badges and direct order links.
+3. Internal notes panel with rich-text editor, search, and author filter.
 
 == Changelog ==
+
+= 1.1.0 =
+* Added internal notes — per-customer private notes with rich-text formatting, keyword search, author filter, and pagination.
 
 = 1.0.0 =
 * Initial release.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-Initial release.
+= 1.1.0 =
+Adds the internal notes feature. No action required after updating — the notes table is created automatically on first use.
