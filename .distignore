@@ -3,9 +3,7 @@
 .gitignore
 .phpcs.xml
 .phpunit.result.cache
-composer.json
 composer.lock
 phpunit.xml.dist
 tests
 *.local.md
-*.json
