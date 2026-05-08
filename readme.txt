@@ -19,13 +19,22 @@ When you click on a customer name anywhere inside WooCommerce — orders list, r
 **What you get on each profile:**
 
 * **Contact card** — name, email (with one-click copy), phone (with one-click copy and direct WhatsApp link), and billing address.
-* **Location map** — an embedded map built from the customer's billing address so you can instantly see where they are.
+* **Location map** — a click-to-load map built from the customer's billing address so you can instantly see where they are. The map is powered by Google Maps and only loads after you click the "View on map" button — nothing is sent to Google on page load.
 * **Key metrics** — total spent, average order value, total order count, date of first order, and average interval between orders.
 * **Recent orders table** — the last orders with status badges and direct links to each order.
 * **Internal notes** — add private notes to any customer profile. Notes support rich-text formatting (bold, italic, underline, bullet and numbered lists, and links), can be searched by keyword, filtered by author, and are paginated. Each team member can edit or delete only their own notes.
 * **Quick actions** — a direct link to the standard WordPress user-edit page whenever you need to change account details.
 
 The plugin intercepts all WooCommerce entry points that normally link to `user-edit.php` and silently redirects them to the new profile page, so your team never has to remember a separate URL.
+
+== External Services ==
+
+This plugin optionally connects to **Google Maps** (maps.google.com) to display a location map based on the customer's billing address.
+
+* The map is only loaded after an explicit click on the "View on map" button. No data is sent to Google automatically on page load.
+* By clicking "View on map", the customer's billing address is sent to Google as part of the map request.
+* [Google Privacy Policy](https://policies.google.com/privacy)
+* [Google Terms of Service](https://policies.google.com/terms)
 
 == Installation ==
 
