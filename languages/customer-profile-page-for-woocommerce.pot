@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-01T00:28:49+00:00\n"
+"POT-Creation-Date: 2026-05-08T01:00:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: customer-profile-page-for-woocommerce\n"
@@ -60,17 +60,17 @@ msgid "Cancel"
 msgstr ""
 
 #: includes/Core/Assets.php:59
-#: templates/admin/customer-profile.php:265
+#: templates/admin/customer-profile.php:275
 msgid "Bold"
 msgstr ""
 
 #: includes/Core/Assets.php:60
-#: templates/admin/customer-profile.php:266
+#: templates/admin/customer-profile.php:276
 msgid "Italic"
 msgstr ""
 
 #: includes/Core/Assets.php:61
-#: templates/admin/customer-profile.php:267
+#: templates/admin/customer-profile.php:277
 msgid "Underline"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid "Loading…"
 msgstr ""
 
 #: includes/Core/Assets.php:67
-#: templates/admin/customer-profile.php:294
+#: templates/admin/customer-profile.php:304
 msgid "All authors"
 msgstr ""
 
@@ -154,142 +154,150 @@ msgstr ""
 msgid "Customer not found."
 msgstr ""
 
-#: templates/admin/customer-profile.php:57
+#: templates/admin/customer-profile.php:58
 msgid "(no name)"
 msgstr ""
 
-#: templates/admin/customer-profile.php:62
+#: templates/admin/customer-profile.php:63
 msgid "Edit customer"
 msgstr ""
 
-#: templates/admin/customer-profile.php:70
+#: templates/admin/customer-profile.php:71
 msgid "Send password reset"
 msgstr ""
 
-#: templates/admin/customer-profile.php:80
+#: templates/admin/customer-profile.php:81
 msgid "Password reset email sent successfully."
 msgstr ""
 
-#: templates/admin/customer-profile.php:84
+#: templates/admin/customer-profile.php:85
 msgid "Failed to send password reset email. Please try again."
 msgstr ""
 
-#: templates/admin/customer-profile.php:106
+#: templates/admin/customer-profile.php:107
 msgid "Copy email"
 msgstr ""
 
-#: templates/admin/customer-profile.php:122
+#: templates/admin/customer-profile.php:124
 msgid "WhatsApp"
 msgstr ""
 
-#: templates/admin/customer-profile.php:126
+#: templates/admin/customer-profile.php:129
 msgid "Copy phone"
 msgstr ""
 
-#: templates/admin/customer-profile.php:131
+#: templates/admin/customer-profile.php:134
 msgid "—"
 msgstr ""
 
 #. translators: %s: registration date
-#: templates/admin/customer-profile.php:144
+#: templates/admin/customer-profile.php:147
 #, php-format
 msgid "Customer since %s"
 msgstr ""
 
-#: templates/admin/customer-profile.php:159
+#: templates/admin/customer-profile.php:161
 msgid "Customer location"
 msgstr ""
 
+#: templates/admin/customer-profile.php:165
+msgid "View on map"
+msgstr ""
+
 #: templates/admin/customer-profile.php:168
+msgid "Loads Google Maps — address will be sent to Google."
+msgstr ""
+
+#: templates/admin/customer-profile.php:178
 msgid "Total spent"
 msgstr ""
 
-#: templates/admin/customer-profile.php:172
+#: templates/admin/customer-profile.php:182
 msgid "Average order"
 msgstr ""
 
-#: templates/admin/customer-profile.php:176
+#: templates/admin/customer-profile.php:186
 msgid "Orders"
 msgstr ""
 
-#: templates/admin/customer-profile.php:180
+#: templates/admin/customer-profile.php:190
 msgid "First order"
 msgstr ""
 
-#: templates/admin/customer-profile.php:192
+#: templates/admin/customer-profile.php:202
 msgid "Avg. interval"
 msgstr ""
 
 #. translators: %d: number of days
-#: templates/admin/customer-profile.php:198
+#: templates/admin/customer-profile.php:208
 #, php-format
 msgid "every %d days"
 msgstr ""
 
-#: templates/admin/customer-profile.php:211
+#: templates/admin/customer-profile.php:221
 msgid "Recent orders"
 msgstr ""
 
-#: templates/admin/customer-profile.php:218
+#: templates/admin/customer-profile.php:228
 msgid "Order"
 msgstr ""
 
-#: templates/admin/customer-profile.php:219
+#: templates/admin/customer-profile.php:229
 msgid "Date"
 msgstr ""
 
-#: templates/admin/customer-profile.php:220
+#: templates/admin/customer-profile.php:230
 msgid "Status"
 msgstr ""
 
-#: templates/admin/customer-profile.php:221
+#: templates/admin/customer-profile.php:231
 msgid "Total"
 msgstr ""
 
-#: templates/admin/customer-profile.php:246
+#: templates/admin/customer-profile.php:256
 msgid "No orders found."
 msgstr ""
 
-#: templates/admin/customer-profile.php:251
+#: templates/admin/customer-profile.php:261
 msgid "View all orders"
 msgstr ""
 
-#: templates/admin/customer-profile.php:259
+#: templates/admin/customer-profile.php:269
 msgid "Notes"
 msgstr ""
 
-#: templates/admin/customer-profile.php:269
+#: templates/admin/customer-profile.php:279
 msgid "Bullet list"
 msgstr ""
 
-#: templates/admin/customer-profile.php:270
+#: templates/admin/customer-profile.php:280
 msgid "Numbered list"
 msgstr ""
 
-#: templates/admin/customer-profile.php:272
+#: templates/admin/customer-profile.php:282
 msgid "Link"
 msgstr ""
 
-#: templates/admin/customer-profile.php:279
+#: templates/admin/customer-profile.php:289
 msgid "Add a note…"
 msgstr ""
 
-#: templates/admin/customer-profile.php:281
+#: templates/admin/customer-profile.php:291
 msgid "Add note"
 msgstr ""
 
-#: templates/admin/customer-profile.php:291
+#: templates/admin/customer-profile.php:301
 msgid "Search notes…"
 msgstr ""
 
-#: templates/admin/customer-profile.php:302
+#: templates/admin/customer-profile.php:312
 msgid "Notes pagination"
 msgstr ""
 
-#: templates/admin/customer-profile.php:304
+#: templates/admin/customer-profile.php:314
 msgid "← Previous"
 msgstr ""
 
-#: templates/admin/customer-profile.php:306
+#: templates/admin/customer-profile.php:316
 msgid "Next →"
 msgstr ""
